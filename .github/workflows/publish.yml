@@ -24,3 +24,9 @@ jobs:
         branch: main
         conventional_commits: true
         dry_run: false # set this to true if you want to do a dry run
+
+# Rename the local branch if you renamed the remote branch on github.
+# git branch -m father father
+# git fetch origin
+# git branch -u origin/father father
+# git remote set-head origin -a
