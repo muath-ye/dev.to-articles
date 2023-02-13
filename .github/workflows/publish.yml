@@ -1,0 +1,26 @@
+# runs on pull requests, manually, and the main branch
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+    - father
+
+jobs:
+  my_job:
+    name: push details to Dev.to
+    permissions:
+      contents: write # this lets the bot update the post in github
+    runs-on: ubuntu-latest # ubuntu costs half the price of windows
+
+    steps:
+    - uses: actions/checkout@v3 # checks out my code to the actions build
+    - name: Publish articles on Dev.to
+      uses: sinedied/publish-devto@v2
+      with:
+        devto_key: ${{ secrets.SECRET_DEVTO_TOKEN }} # the secret you setup
+        github_token: ${{ secrets.GITHUB_TOKEN }} # this is an inbuilt secret by github
+        files: 'markdown/**/*.md'
+        branch: main
+        conventional_commits: true
+        dry_run: false # set this to true if you want to do a dry run
