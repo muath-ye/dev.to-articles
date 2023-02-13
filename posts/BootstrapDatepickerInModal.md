@@ -5,6 +5,8 @@ description: Simply wrap your datepicker code in bootstrap's modal shown event.
 tags: 'datepicker, modal'
 cover_image: ./assets/BootstrapDatepickerInModal/modal-datetime-picker.png
 canonical_url: 'https://muathye.com/en/articles/add-bootstrap-datepicker-in-modal.html'
+id: 1364434
+date: '2023-02-13T21:57:08Z'
 ---
 
 # How to solve bootstrap datepicker in modal
