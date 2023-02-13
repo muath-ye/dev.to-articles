@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - father
+    - main
 
 jobs:
   my_job:
