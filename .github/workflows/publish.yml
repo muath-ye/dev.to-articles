@@ -7,15 +7,15 @@ on:
     - main
 
 jobs:
-  env:
-    GIT_COMMITTER_NAME: muath
-    GIT_COMMITTER_EMAIL: muathye@gmail.com
   my_job:
     name: push details to Dev.to
     permissions:
       contents: write # this lets the bot update the post in github
     runs-on: ubuntu-latest # ubuntu costs half the price of windows
 
+    env:
+      GIT_COMMITTER_NAME: muath
+      GIT_COMMITTER_EMAIL: muathye@gmail.com
     steps:
     - uses: actions/checkout@v3 # checks out my code to the actions build
     - name: Publish articles on Dev.to
