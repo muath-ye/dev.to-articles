@@ -15,7 +15,7 @@ Sometimes you need to eager load different relationships depending on the type o
 
 For example: you have two type of users `seller` and `buyer`, the eager load relationship for `seller` is the `product` and the eager load relationship for `buyer` is the `order`.
 
-* First setup the Models.
+* First step is setup the Models.
 
 ```php
 class Seller extends Model
@@ -47,7 +47,7 @@ class Profile extends Model
 }
 ```
 
-* Then load the relations like the following:
+* Second step is loading the relations like the following:
 
 ```php
 Profile:with('user', function (MorphTo $morphTo) {
