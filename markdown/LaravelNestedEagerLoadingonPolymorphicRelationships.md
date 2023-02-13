@@ -4,7 +4,7 @@ published: true # if you set this to false it will publish the page as a draft
 description: Sometimes you need to eager load different relationships depending on the type of model on a polymorphic relationship.
 tags: 'laravel, model, eager-loading, polymorphic'
 cover_image: ./assets/LaravelNestedEagerLoadingonPolymorphicRelationships/eager.png
-canonical_url: https://muathye.com/en/articles/laravel-nested-eager-loading-on-polymorphic-relationships.html  # set this if you have a website you want to be promoted
+canonical_url: null  # set this if you have a website you want to be promoted
 ---
 
 # Laravel Nested Eager Loading on Polymorphic Relationships
