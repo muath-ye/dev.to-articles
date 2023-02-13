@@ -24,7 +24,7 @@ jobs:
         devto_key: ${{ secrets.SECRET_DEVTO_TOKEN }} # the secret you setup
         github_token: ${{ secrets.GITHUB_TOKEN }} # this is an inbuilt secret by github
         files: 'markdown/**/*.md'
-        branch: father
+        branch: main
         conventional_commits: true
         dry_run: false # set this to true if you want to do a dry run
 
