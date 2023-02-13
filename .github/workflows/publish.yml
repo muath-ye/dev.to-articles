@@ -7,6 +7,9 @@ on:
     - main
 
 jobs:
+  env:
+    GIT_COMMITTER_NAME: muath
+    GIT_COMMITTER_EMAIL: muathye@gmail.com
   my_job:
     name: push details to Dev.to
     permissions:
